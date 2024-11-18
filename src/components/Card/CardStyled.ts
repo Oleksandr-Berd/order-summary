@@ -8,14 +8,30 @@ export const CardCon = styled.div`
   border-radius: 20px;
 
   overflow: hidden;
+
+  @media (min-width: 1280px) {
+    width: 450px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const HeroImgCon = styled.div`
   margin-bottom: 32px;
 
+  @media (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+
   & > img {
     width: 327px;
     height: 160px;
+
+    @media (min-width: 1280px) {
+      width: 450px;
+      height: 220px;
+    }
   }
 `;
 
@@ -30,6 +46,10 @@ export const CardTitle = styled.h3`
   font-size: 22px;
 
   color: #1f2e55;
+
+  @media (min-width: 1280px) {
+    font-size: 28px;
+  }
 `;
 
 export const CardContent = styled.p`
@@ -38,6 +58,13 @@ export const CardContent = styled.p`
   font-size: 15px;
 
   color: #717fa6;
+
+  @media (min-width: 1280px) {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: 1.63;
+  }
 `;
 
 export const SubscriptionCon = styled.div`
@@ -55,6 +82,15 @@ export const SubscriptionCon = styled.div`
 
   border-radius: 11px;
 
+  @media (min-width: 1280px) {
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+
+    margin-bottom: 32px;
+  }
+
   & > a {
     font-size: 13px;
     font-weight: 800;
@@ -62,6 +98,20 @@ export const SubscriptionCon = styled.div`
     color: #382ae1;
 
     text-decoration: underline;
+
+    @media (min-width: 1280px) {
+      margin-left: 94px;
+
+      font-size: 14px;
+      transition: color 1s linear;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: #766cf1;
+        transition: color 1s linear;
+      }
+    }
   }
 `;
 export const PriceCon = styled.div`
@@ -69,12 +119,22 @@ export const PriceCon = styled.div`
     font-size: 14px;
 
     color: #1f2e55;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 6px;
+
+      font-size: 16px;
+    }
   }
 
   & > p {
     font-size: 14px;
 
     color: #717fa6;
+
+    @media (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -96,6 +156,15 @@ export const ButtonCon = styled.div`
 
     border-radius: 11px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    transition: background-color 1s linear;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 32px;
+
+      background-color: #766cf1;
+      transition: background-color 1s linear;
+      cursor: pointer;
+    }
   }
 
   & > *:nth-child(2) {
@@ -104,5 +173,12 @@ export const ButtonCon = styled.div`
 
     background-color: transparent;
     color: #717fa6;
+    transition: color 1s linear;
+
+    @media (min-width: 1280px) {
+      color: #1f2e55;
+      transition: color 1s linear;
+      cursor: pointer;
+    }
   }
 `;
